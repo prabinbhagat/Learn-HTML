@@ -229,5 +229,70 @@
     </video>
     <p>This video is just used for demo purpose</p>
 
+    <!-------------------------------form the basic forms refer H1 tags ----------------------------------->
+    <h1>A basic Form</h1>
+    <form action="">
+        <h2>Form elements go here</h2>
+        <h3>Other Html is fine, too</h3>
+    </form>
+    <p>
+        <input type="text" value="googoo">        
+    </p>
+
+    <h1>Sample form with a FieldSet</h1>
+    <form action="">
+        <fieldset>
+            <legend>Personal Data</legend>
+            <p>
+                <label>Name</label>
+                <input type="text"/>
+            </p>
+            <p>
+                <label>Address</label>
+                <input type="text"/>
+            </p>
+            <p>
+                <label > Phone</label>
+                <input type="text"/>
+            </p>
+        </fieldset>
+    </form>
+
+<h1>Making a Standard text field</h1>
+<form action="">
+    <p>
+        <label for="input">Name</label>
+        <input type="text" id="txtName" value="Ram"/>
+    </p>
+</form>
+
+<h1>Building a password field</h1>
+<form action="">
+    <fieldset>
+        <legend>Enter a password</legend>
+        <p>
+            <label for="input">Type password here</label>
+            <input type="password" id="pwd" value="secret"/>
+        </p>
+    </fieldset>
+</form>
+
+<h1>Making MULTI-LINE text input</h1>
+<form action="">
+    <fieldset>
+        <legend>Quiz</legend>
+        <p>
+            <label for="input">Name</label>
+            <input type="text" id="txtName"/>
+        </p>  
+        <p>
+            <label for="">Please enter the sum total of Western thought. Be brief.</label>
+        </p>
+        <p>
+            <textarea name="mist" id="txtAnswer" cols="30" rows="10"></textarea>
+        </p>
+    </fieldset>
+</form>
+
 </body>
 </html>

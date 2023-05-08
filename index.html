@@ -260,8 +260,45 @@ Now lets see the basic construction of a HTML page
         Adding Video <video> to the HTML Page.
             The <video> tag is very similar to <audio> tag and it works in exactly the same way.
 
+        Creating FORMS
 
+        aLL THE form elements mus t be embed inside a <form></form> pair. The code for basicForm.html illustrates the simplest possible form.
+        Forms can contain many components, but the most important are the input elements(text boxes ,buttons, drop-down lists and the like)
 
+        A FIELDSET is a special element used to supply a visual grouping to a set of form elements.
 
-    ->
+        The Basic form has three elements:
 
+        1. The <form> and </form> tags: these define the form as a part of the page. Dont Forget The NULL ACTION ATTRIBUTE ll discusll lateer about action
+        2. The <fieldset> pair : This pair describes the included elements as a set of fields. this element is necessary , but it does
+            give you some nice organization and lyout options later with we willuse CSS.
+            Think fieldset as a blank canvas for adding visual design to your forms. 
+        3. The <legend> tag : A part of the fieldset , this tag allows you to specify a legned for the entire fieldset. it is visible to the user
+        4. The paragraphs: I somentime place each label and its correspoinding input element in a praragraph. This provides some nice formatting capabilites.
+        5. The <label > tag: This tag allows you to specify a praticular chunk of text as lable. No formatting is done by default, but you can add later with CSS.
+            The label has a optional for attribute that allow you to connect the lable with a specific input element.
+
+        6. The <input> elements: The user types data into these elements.
+
+        Making a Standard Text Field
+        Name = Ram
+        An input element has three common attribute type,id,value
+        type: The type attribue indicates the type of input element this is . Our example sets type to text, creating a standard
+                textbox. Other types would be passwords,hidden fields, check boxes and buttons.
+        id: The id attribute create a identifier for the field. When we use a programming language to extract data from this element, use id to specify which field you're referring to.
+        value: This attribute determines the default value of the text box.
+
+        Other attribue of textbox are:
+        size: This attribute determines the number of characters that are displayed.
+        maxlength: Use this attribue to set the largest number o characters that are allowed.
+
+        *** There is no </input> tag. Input tags are a leftover from the days when many tags did not have ending tags. You just end the original tag with a slash character.
+
+        Building a password field
+
+        MAKING MULTI-LINE TEXT INPUT <textarea>
+            The single line text field is a powerful feature, but sometimes , you want something with a bit more space.
+        Few things to keep in mind when using the <textarea> tag:
+            * It needs and id attribute, just like an input element.
+            * You can specify the size with rows and cols attributes.
+            * The content goes between the tags.
