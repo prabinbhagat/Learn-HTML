@@ -217,9 +217,48 @@ Now lets see the basic construction of a HTML page
         RELATIVE REFERENCE: This is used when the webpage you are building includes more than one page. we might choose to have
                             several pages and a link mechanism for moving among them.
 
+        ------------------------------ADDING IMAGES , SOUNDS , VIDEO-----------------------------------
         
+        Adding Images to your Pages
+        EXTERNAL LINK <using p tag, a tag with href attribute>: tHE current page has a text with a link embedded on it. Here href points to an image 
+        file, not an HTML page. We can point to any file  type. If the browser dosent know the file format. The user computer tries to open the file 
+        using whatever program it normally uses to open.
+            Drawback of external Link 1. They dont preview the image 2. They interupt the flow 3. The user must backup to return to main page.
         
+        Adding the inline image to your page.
+        Embedded Image <using img tag with src attribute>: The alternative to provider external link is to embed the image in the current page.
+            ** If you use height and width attribute to change the image height the user still has to wait for the full image to be loaded.
+                Though he will see a smaller version. So its not a best practice to use the height width attribute to change the img size.
+                Makes sense, dont make user wait for things which he wont see. HaHaHa
+
+        Images takes a lot of space and memory. So keep in mind.
+        1. Make sure the images are worth displying.
+        2. Use software to resize your image.
+        3. Use a compressed format.
+
+        You can use Irfan view  from www.irfanview.net to resize your image. Here are somemore
+        * pixia :  Full blown windows only graphic editor from Japan. Very powerful
+        * GimpShop.
+        * Paint.NET
+
+        Working with AUDIO with <audio> tag
+            The best way to be sure the sound plays is to supply two different formats. I've found that including both Ogg and MP3 formats ensure my audio will 
+            play on all major browser.
+
+            To add audio file to your page follow below steps.
+            1.ADD THE AUDIO TAG TO YOUR PAGE: The <audio> tag indicates where and audio file will be placed. Where you place the tag in the code corresponds
+                to where the CONTROL will appear.
+            2.TURN ON CONTROLS:You can specify a control panel with the controls = "controls" attribute. if you dont include this directive then the audio
+                will not be able to play the clip
+            3.CREATE A <source> element or two: Inside the <audio> </audio> pair add one or more <source> elements. Each source element indicate a file
+                you will link to.
+            4.SET THE src ATTRIBUTE TO INDICATE THE FILE: THE src attribute of the source tag is used to indicate the file name of the audio file you
+                wish to play.
+            5.ADD ALTERNATE CODE FOR THE OLDER BROWSER: Any additional HTML code betweeen the audio tags will be interpreted only by browsers that do not 
+                understand the audio tag.You can add an ordinary anchor to download the sound effect if you wish. this way older browser will also hear.
+            
         
+
 
 
     ->
