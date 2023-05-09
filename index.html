@@ -399,6 +399,70 @@ Now lets see the basic construction of a HTML page
                     <input type ="datetime-local" id ="datetime-local"/>
 
 
+        ---------------------------MANAGING DATE AND TIME DATA---------------------
+        The official full date and time format returned from the various date and time elements is a specialized code:
+            yyyy-mm-ddThh:mm+ff:gg
+            yyyy: Four Digits of the year
+            -(dash): Must be placed between year and month.And also between month and day.
+            mm: Two digit for month
+            dd: Two digit for day
+            T:  Capital "T" indicates the beginning of the time part of the code.
+            hh: two digit hours in 24 hr format
+            (colon): colon character betwn hour & minute also in hour and minute of time zone
+            mm: Two digit for the minute
+            +/-/Z: The time zone offset is indicated by a capital Z (if the time is Zulu or GMT time) or the + or - symbol
+                    if time is in another time zzone.
+            ff: if the time zone is not Zulu time, indicae the number of hours offset from GMT.
+            gg: Number of minutes offset from Zulu time.Typically this is 00, but it is possible that the time zone will be offset by nk,30 or 45 minutes
+            
+            For example : 5:30 PM on May 09, 2023, in new york city will be indicted like this:
+                2023-05-09T17:30-05:00
+        
+        week: The week field is used to pick a week from a calendar control. It returns value in the following format:
+                yyyy-Wnn
+                Year-W nn is week as two digit number
+                <input type ="week" id ="week"/>
+        
+        month: The month input type generates a four digit year followed by a two digit month yyyy-mm is returned
+                <input type ="month" id ="month"/>
+
+        color: The color tool allows user to choose a color using standard web formatas:recognized color names(ellow) and hex
+                values preceded by a # symbol(#ff0033)
+                <input type ="color" id ="color"/>
+
+        number: The number field allows the input of a numerical datat.
+                <input type ="number" id ="num" max="10" min = "0" />
+                It has several different attribute
+                min: Min value allowed
+                max: Max value allowed
+                step: This value indicate how much the visual interface tools(typically small up and down arrow) will change the value when activated.
+                value: This is the numeric value of the element
+        
+        range: Most user interface toolkits has some sort of slider or scrollbar mechanism that makes it easy for the user ot enter a numeric value visually.
+                <input type = "range" 
+                 id = "range"
+                 min ="0"
+                 max ="255"
+                 value ="128/">
+
+        search: The search input type is used to retrieve text that intended to be used as par of a search (either internally or 
+                through some searching service like Google.) On most browser it is displayed as ordinary text field.
+                <input type ="search" id ="search"/>
+
+        email: The email element generally looks like a plain text field, but it validaates on an e-mail address.
+                <input type ="email" id ="txtEmail"/>
+        
+        tel:    The tel field is used to input a telephon number it expects three digit followed by a dash and four digits. You may
+                need to play with pattern attribute if you want to allow an area code or extensions to validate.
+
+        url:    Use this input type to indicate a web address. Browsers that support this element will checkfor the http:// prefix
+                . Mobile browsers may also adapt the virtual keyborad to include charcters commonly foun in URLS like : ,slash,and ~
+                    <input type ="url" id ="url"/>
+
+        
+
+
+
 
 
         
