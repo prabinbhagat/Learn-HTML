@@ -340,7 +340,67 @@ Now lets see the basic construction of a HTML page
         * One of them has to be selected.
         eg.
 
-        Pressing the BUTTONS
+        Pressing the BUTTONS---------
 
         HTML5 also comes with several types of buttons. We use these guys to make something actually happen. When user clicks
+        see eg.
+
+        Making input-style buttons
+        The most common form of button is antother form of our old friend <input> tag. Just set input type = "button"
+        <input type="button" value="Input type = button">
+
+        The ordinary input button has a few key features.:
+        * The input type is set to "button". This makes an ordinary button
+        * The Value attribute sets the button caption.
+        * This type of button dosent support link: Althoug the button appears to depress whent it is clicked. it dosent do
+            anything. We have to write some javascript code to make it work.
+        * Later we will add event handling to the button: with JAVASCRIPT we use a special attribuet to connect the button to code
+        * This type of button is for client side programming: This type of code resided on the user computer. ll see in javascript.
+
+        BUILDING A SUBMIT BUTTON
+        SUBMIT Button is used for service side programming. In this form of programming the code is on the web server.
+
+        Although they look same but submit button is different than ordinary button in couple of subtle ways.
+        * The value attribute is optional, this attribute is used to set the caption.
+        * Clicking it caused a link. Useed for service side programming. On click all informating is gathered and sent to some other page on web.
+        * Right now , it goes nowhere, : when we set the form action attribut to "" you told the submit button to just RELOAD the current page.
+        * Submit buttons arent for client sied: Although we cn attach an event to submit button, the linking behaviours often causes problem.
+
+        ** Use regular input button for client side and submit button for server side.
+        ITS A DO-OVER: THE RESET BUTTON
+        Yet another form of the versatile input tag create the reset button
+
+        <input type ="reset"/>
+        This button when clicked it resets all the element of its from to their defaul values., it dosent require any code.
+        
+        INTRODUCING THE <button> tag
+            it works like
+            <button type = "button">Caption here</button>
+        The <button>tag acts more like an standard HTML tag, but it can also act like a submit button.
+            * The type attribute determines the style: We cna set the button to ordinary(by setting its type to button),submit,reset.
+              If we dont specify the type buttons use the Submit style.
+            * the caption goes between the tag pairs.
+            * You cna incorporate other elements:We can place images or styled text inside a button.
+
+        ------------------------------------------NEW FORM INPUT TYPES---------------------------------------------
+        HTML forms are centered around humble but flexible input element.
+
+        DATE: Setting the input type to date indicates that you wish user to enter a date value
+                <input type= "date" id="date" />
+              We can restrict the date range by applying min and max attribute. Format is yyyy-mm-dd
+        
+        TIME: It allow user to input time. Format is HH:MM
+                <input type ="time" id ="time"/>
+        
+        datetime: It combines date and time in single element. It also include mechanism to input timezone
+                    <input type ="datetime" id ="datetime"/>
+
+        datetime-local: It is just like datetime except it does not include a time zone indicator
+                    <input type ="datetime-local" id ="datetime-local"/>
+
+
+
+
+        
+        
 
