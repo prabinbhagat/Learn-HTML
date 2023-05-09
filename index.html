@@ -302,3 +302,45 @@ Now lets see the basic construction of a HTML page
             * It needs and id attribute, just like an input element.
             * You can specify the size with rows and cols attributes.
             * The content goes between the tags.
+
+        CREATING MULTIPLE SELECTION ELEMENTS 
+        Sometimes we want to present the user with a list of choices and then have them pick one of these elements.
+        HTML have a number of ways to do this.
+
+        MAKING SELECTIONS.
+        The DROP DOWN LIST IS A FAVORITE SELECTION TOOOL OF THE WEB DEVELOPERS.
+        1. It saves screen space: Only current selection is shown.
+        2. It limits Input.
+        2. The value can be different than what the user sees: This seems odd advantage , but it tends to be very useful sometimes.
+            eg What is your favorite color Red,Green,Blue etc goes to drpdwn
+        The select object is a bit different from some of the other input elements youre used to such as.
+        * It's Surrounded by a <select> pair .These tags indicate the entire list.
+        * The select object has an id attribute: Although the select object has may other tags inside, typiclly only the select object itselh has and id attribute.
+        * it Contains a sereis of <option> pairs: Each individual selection is housed in an <option></option> set
+        * The content between the <option></option> is visible to user not the value
+
+        ** #ff0000 : These are hex codes and its a good way to describe color.
+
+        BUILDING CHECK BOXES
+        Check boxes are used when you want the user to turn a particual choice on or off.
+            eg.--
+        We use the same attributes of the <input> tage i.e type , buth they worka bit differently the way thet do in a pain old txtBox.
+
+        * The type is checkbox: thats how the browser knows to make a checkbox rether than a field.
+        * The checkbox still requires an ID: If you ll be writing programming code to work with this thing you ll need an ID for ref.
+        * The value is hidden from the user: The user dosent see the actual value. Thats for the programmer.
+
+        CREATING RADIO BUTTONS
+        Radio Buttons are used when you want to let the user pick only one option from a group.
+        * Only one can be checked at a time.
+        * They have to be in group.
+        * They all have the same name! Each radio button has its own id(like other input elements), but they have a name attribute.
+            The name attribute indicates the group a radio button is in.
+        * You can have more than one group in a page: Just us a different name attribute for each group.
+        * One of them has to be selected.
+        eg.
+
+        Pressing the BUTTONS
+
+        HTML5 also comes with several types of buttons. We use these guys to make something actually happen. When user clicks
+
