@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--
     <meta charset="UTF-8">
@@ -8,11 +9,12 @@
     <title>Document</title>
     -->
     <title> my first webpage </title>
-            <meta charset = "utf-8">
-            <meta name = "description" content = "this field include description about your page. it is usually two sentence lomg.">
-            <meta name = "author Prabiin"  content = "Conor Sheilaji">    
+    <meta charset="utf-8">
+    <meta name="description" content="this field include description about your page. it is usually two sentence lomg.">
+    <meta name="author Prabiin" content="Conor Sheilaji">
 
 </head>
+
 <body>
     <p>Hello World</p>
     <h1>Hello World This is h1 here</h1>
@@ -24,22 +26,44 @@
 
     <p>Welcome to <em>my</em> brand new website.this site will be my <strong>new</strong> home on the web. </p>
 
-    <p>Check The Google : <a href="https://www.google.com">Google</a></p>   <!--Anchor tag eg-->
-    
-   <p><a href="index.html">index HTML PAGE</a></p>         <!--We can also provide the path for the html if it is in a particual locationin system-->
+    <p>Check The Google : <a href="https://www.google.com">Google</a></p> <!--Anchor tag eg-->
+
+    <p><a href="index.html">index HTML PAGE</a></p>
+    <!--We can also provide the path for the html if it is in a particual locationin system-->
     <h1>Some of my favorite Sites </h1>
-    <h2>Wikipedia</h2>
-    <p>One of my faborite web site is called <a href="http://wikipedia.com">wikipedia.</a>This terrific sites allowas ordinary usert to enterencyclopedida defination. </p>
+    <h2>Wikipedia</h2> <!--The target attribute _blank is used to open page in new tab-->
+    <p>One of my faborite web site is called <a href="http://wikipedia.com" target="_blank">wikipedia.</a>This terrific
+        sites allowas ordinary usert to enterencyclopedida defination. </p>
     <h2>Dummies</h2>
-    <p>You can find out a lot about upcoming and current Dummies books at <a href="https://www.dummies.com">www.dummies.com</a> </p>
+    <p>You can find out a lot about upcoming and current Dummies books at <a
+            href="https://www.dummies.com">www.dummies.com</a> </p>
     <h2>PopURLS</h2>
-    <p>If you want to know whats happening on the internet totay, checkout <a href="http://www.popurls.com">popurls.com</a> </p>
-    <img src = "lockkey.jpg" height="150" width="150">LockKey Old</img> <!-- Image tag example-->
+    <p>If you want to know whats happening on the internet totay, checkout <a
+            href="http://www.popurls.com">popurls.com</a> </p>
+    <img src="lockkey.jpg" height="150" width="150">LockKey Old</img> <!-- Image tag example-->
+
+    <!-- Inline and Block elements -->
+    <h1>inline and block element</h1>
+    <p>This is First Para</p>
+    <p>This is Second Para</p>
+    <!--This shows paragraph is a block element it takes entire block width-->
+    <span>This is First Span</span>
+    <span>This is Second Span</span>
+    <!--THis shows Span is a inline element-->
+    <!-- Lets see this through border using style -->
+    <p style="border: 2px solid red;">This is First Para</p>
+    <p style="border: 2px solid green;">This is Second Para</p>
+
+    <span style="border: 2px solid blue;">This is First Span</span>
+    <span style="border: 2px solid cyan;">This is Second Span</span>
+
+    <!--through border we can see block element takes entire block highlited in color and inline tag only takes the required length-->
+    <!--Through the use of CSS we can make block elemnts to inline element-->
 
     <!-- Basic List unordered list -->
     <h1>Basic Lists</h1>
     <h2>Common Web Browser</h2>
-    <ul>
+    <ul type="square"> <!--the type attribue is used to change the number type(like square,disc,circle) -->
         <li>Edge</li>
         <li>Chrome</li>
         <li>Firefox</li>
@@ -50,7 +74,7 @@
     <!--Basic List Ordered list-->
     <h1>Basic Ordered List</h1>
     <h1>Top five dog names in the USA</h1>
-    <ol>
+    <ol type="I"> <!--the type attribue is used to change the number type(like 1,2,3 ro I,II,III,A,B,C) -->
         <li>Max</li>
         <li>Jake</li>
         <li>Buddy</li>
@@ -62,7 +86,9 @@
     <h1>Nested list</h1>
     <h2>Popular Cat Names</h2>
     <ul>
-        <li> <h3>USA</h3></li>
+        <li>
+            <h3>USA</h3>
+        </li>
         <ol>
             <li>Tigger</li>
             <li>Tiger</li>
@@ -70,7 +96,9 @@
             <li>Smokey</li>
             <li>Sam</li>
         </ol>
-        <li><h3>Australia</h3></li>
+        <li>
+            <h3>Australia</h3>
+        </li>
         <ol>
             <li>Oscar</li>
             <li>Max</li>
@@ -95,8 +123,11 @@
 
     </dl>
     <!-- extras -->
-    <p>Lorem ipsum dolor sit amet <em>This is Emphasised Text</em> consectetur <strong>This is Strong Text</strong> adipisicing elit. Culpa consequuntur ducimus, numquam maiores quidem eaque est facere. Recusandae,<br> hic
-         dolorem culpa veritatis maiores quisquam corporis quibusdam autem esse dolores magni?<hr> </p>
+    <p>Lorem ipsum dolor sit amet <em>This is Emphasised Text</em> consectetur <strong>This is Strong Text</strong>
+        adipisicing elit. Culpa consequuntur ducimus, numquam maiores quidem eaque est facere. Recusandae,<br> hic
+        dolorem culpa veritatis maiores quisquam corporis quibusdam autem esse dolores magni?
+        <hr>
+    </p>
 
     <!-- Basic Table eg -->
     <H2>Basic table design</H2>
@@ -119,7 +150,8 @@
     <h2>HTML Super Heroes</h2>
     <table border="1">
         <tr>
-            <th>Hero</th> <!--Headings dont have to be in the top row. if you want headings on the left,just put a <th></th> pairat the first element of each row
+            <th>Hero</th>
+            <!--Headings dont have to be in the top row. if you want headings on the left,just put a <th></th> pairat the first element of each row
                             you can have headings at the both the top and the left, infact you can have headings anywhere until it make sense-->
             <th>Power</th>
             <th>Nemesis</th>
@@ -127,7 +159,7 @@
         <tr>
             <td>The HTMLator</td>
             <td>Standards compliance</td>
-            <td>Sloppy Code Boy</td>     
+            <td>Sloppy Code Boy</td>
         </tr>
         <tr>
             <td>Captain CSS</td>
@@ -141,14 +173,41 @@
         </tr>
     </table>
 
+    <!--Another example of table with thead and tbody-->
+    <h1>Example with thead and tbody att of table</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Emp_ID</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        g
+        <tbody>
+            <tr>
+                <td>Prbin</td>
+                <td>521489</td>
+                <td>Programmer</td>
+            </tr>
+            <tr>
+                <td>Rabin</td>
+                <td>547859</td>
+                <td>Html expert</td>
+            </tr>
+        </tbody>
+    </table>
+
     <!--Eggxample of colspan and rowspan
     tip If you want to use rowspan and colspan dont just hammer awat at the page in code editor. First SKETCH OUT  what you want to accomplish first
     this would be of great help before creating a table in HTML with spans-->
     <h1>Using colspan and rowspan</h1>
     <table border="1">
-        <caption><p>My Schedule</p></caption>
-        <tr>        
-            <th>      </th>
+        <caption>
+            <p>My Schedule</p>
+        </caption>
+        <tr>
+            <th> </th>
             <th>Monday</th>
             <th>Tuesday</th>
             <th>Wednesday</th>
@@ -182,7 +241,7 @@
             <td>Maniacal Laughter</td>
             <td>Maniacal Laughter</td>
             <td>Maniacal Laughter</td>
-        </tr>        
+        </tr>
     </table>
     <hr>
 
@@ -190,17 +249,21 @@
 
     <h1>Some nice programming books</h1>
     <ul>
-        <li><a href="http://www.aharrisbooks.net/haio">HTML / CSS / JavaScript All in one for Dummies</a> A complete resource to web development</li>
-        <li><a href="http://www.aharrisbooks.net/jad">JavaScript / AjaX for Dummies</a> Using JavaScript, AJAX AND jQuery</li>
-        <li><a href="http://www.aharrisbooks.net/pythonGame">Game programming the L Line</a> Game development in Python</li>
-        <li><a href="http://www.aharrisbooks.net/h5g">HTML5 Game Development for Dummies</a> Building web and mobile games in HTML 5</li>        
+        <li><a href="http://www.aharrisbooks.net/haio">HTML / CSS / JavaScript All in one for Dummies</a> A complete
+            resource to web development</li>
+        <li><a href="http://www.aharrisbooks.net/jad">JavaScript / AjaX for Dummies</a> Using JavaScript, AJAX AND
+            jQuery</li>
+        <li><a href="http://www.aharrisbooks.net/pythonGame">Game programming the L Line</a> Game development in Python
+        </li>
+        <li><a href="http://www.aharrisbooks.net/h5g">HTML5 Game Development for Dummies</a> Building web and mobile
+            games in HTML 5</li>
     </ul>
 
     <!--Example of relative refrence lets create two additonal page in our tut named Market.html and Playground.html-->
     <h1>Where do you want to Go. You are just a click away </h1>
     <ul>
-        <li><a href="/Market.html" >Lets Go to Market</a> You can Go To Market</li>
-        <li><a href="/PlayGround.html">Lets Play</a> You Wanna Play</li>        
+        <li><a href="/Market.html">Lets Go to Market</a> You can Go To Market</li>
+        <li><a href="/PlayGround.html">Lets Play</a> You Wanna Play</li>
     </ul>
 
     <!--External link to an image example-->
@@ -214,17 +277,17 @@
     <!-- <p><circle cx ="50" cy = "50" r = "30" style="stroke: #0000ff; stroke-width:5px;fill:#ff0000;"/></p> .svg format image creation -->
 
     <h1>Audio Demo</h1>
-    <audio controls = "controls">
-        <source src="ClassicOST.mp3" type="audio/mp3" >
-        <source src="ClassicOST.ogg" type="audio/ogg" >
+    <audio controls="controls">
+        <source src="ClassicOST.mp3" type="audio/mp3">
+        <source src="ClassicOST.ogg" type="audio/ogg">
         <!--Below code will work only if browser dosent support above code-->
         Your Browser dosenot support HTML5 AUDIO, Please use the link instead
-        <a href="ClassicOST.mp3">ClassicOST.mp3</a>        
+        <a href="ClassicOST.mp3">ClassicOST.mp3</a>
     </audio>
     <p>Classic OST Track</p>
 
     <h1>Video Demo</h1>
-    <video controls = "controls">
+    <video controls="controls">
         <source src="FellTheLight.mp4" type="video/mp4">
     </video>
     <p>This video is just used for demo purpose</p>
@@ -236,7 +299,7 @@
         <h3>Other Html is fine, too</h3>
     </form>
     <p>
-        <input type="text" value="googoo">        
+        <input type="text" value="googoo">
     </p>
 
     <h1>Sample form with a FieldSet</h1>
@@ -245,127 +308,237 @@
             <legend>Personal Data</legend>
             <p>
                 <label>Name</label>
-                <input type="text"/>
+                <input type="text" />
             </p>
             <p>
                 <label>Address</label>
-                <input type="text"/>
+                <input type="text" />
             </p>
             <p>
-                <label > Phone</label>
-                <input type="text"/>
+                <label> Phone</label>
+                <input type="text" />
             </p>
         </fieldset>
     </form>
 
-<h1>Making a Standard text field</h1>
-<form action="">
-    <p>
-        <label for="input">Name</label>
-        <input type="text" id="txtName" value="Ram"/>
-    </p>
-</form>
-
-<h1>Building a password field</h1>
-<form action="">
-    <fieldset>
-        <legend>Enter a password</legend>
-        <p>
-            <label for="input">Type password here</label>
-            <input type="password" id="pwd" value="secret"/>
-        </p>
-    </fieldset>
-</form>
-
-<h1>Making MULTI-LINE text input</h1>
-<form action="">
-    <fieldset>
-        <legend>Quiz</legend>
+    <h1>Making a Standard text field</h1>
+    <form action="">
         <p>
             <label for="input">Name</label>
-            <input type="text" id="txtName"/>
-        </p>  
-        <p>
-            <label for="">Please enter the sum total of Western thought. Be brief.</label>
+            <input type="text" id="txtName" value="Ram" />
         </p>
-        <p>
-            <textarea name="mist" id="txtAnswer" cols="30" rows="10"></textarea>
-        </p>
-    </fieldset>
-</form>
+    </form>
 
-<h1>Making Basic Select HTML/DROP DOWN</h1>
-<form action="">
-    <p>
-        <label for="selection">What is your favorite color</label>
-        <select name="selColor" id="SelectColor">
-            <option value="#ff0000">Red</option>
-            <option value="#00ff00">Green</option>
-            <option value="#0000ff">Blue</option>
-            <option value="#00ffff">Cyan</option>
-            <option value="#ff00ff">Magenta</option>
-            <option value="#ffff00">Yellow</option>
-            <option value="#000000">Black</option>
-            <option value="#ffffff">White</option>
-        </select>
-    </p>
-</form>
+    <h1>Building a password field</h1>
+    <form action="">
+        <fieldset>
+            <legend>Enter a password</legend>
+            <p>
+                <label for="input">Type password here</label>
+                <input type="password" id="pwd" value="secret" />
+            </p>
+        </fieldset>
+    </form>
 
-<h1>Making Check Boxes</h1>
-<form action="">
-    <fieldset>
-        <legend>Plese Check off your life Goals</legend>
-        <p>
-            <label for="check">WorldPeace</label>
-            <input type="checkbox" id="chkWP" name="chkWorldPeace" value="WP"/>
-        </p>
-        <p>
-            <input type="checkbox" name="chkHarm" id="chkHrmony" value="Harmony">Harmony and BrotherHood
-        </p>
-        <p>
-            <input type="checkbox" id = "chkCash" value="cash"/>Cash
-        </p>
-    </fieldset>
-</form>
+    <h1>Making MULTI-LINE text input</h1>
+    <form action="">
+        <fieldset>
+            <legend>Quiz</legend>
+            <p>
+                <label for="input">Name</label>
+                <input type="text" id="txtName" />
+            </p>
+            <p>
+                <label for="">Please enter the sum total of Western thought. Be brief.</label>
+            </p>
+            <p>
+                <textarea name="mist" id="txtAnswer" cols="30" rows="10"></textarea>
+            </p>
+        </fieldset>
+    </form>
 
-<h1>Creating a Radio Button</h1>
-<form action="">
-    <fieldset>
-        <legend>How Much do you want to spend</legend><!--The name should be same othewise it will allow multiple selction.-->
+    <h1>Making Basic Select HTML/DROP DOWN</h1>
+    <form action="">
         <p>
-            <input type="radio" name="radi1" id="tm" value="500">Too Much
+            <label for="selection">What is your favorite color</label>
+            <select name="selColor" id="SelectColor">
+                <option value="#ff0000">Red</option>
+                <option value="#00ff00">Green</option>
+                <option value="#0000ff">Blue</option>
+                <option value="#00ffff">Cyan</option>
+                <option value="#ff00ff">Magenta</option>
+                <option value="#ffff00">Yellow</option>
+                <option value="#000000">Black</option>
+                <option value="#ffffff">White</option>
+            </select>
         </p>
-        <p>
-            <input type="radio" name="radi1" id="wtm" value="1000"/>Way too Much
-        </p>
-        <p>                         <!--checked = "checked" for default selction-->
-            <input type="radio" name="radi1" id="kid" value="5000" checked="checked"/>You've got to be Kidding
-        </p>
-    </fieldset>
-</form>
+    </form>
 
-<h1>Buttons Demo</h1>
-<form action="">
-    <fieldset>
-        <legend>input-style buttons</legend>
-        <p>
-            <input type="button" value="Input type = button">
-            <input type="Submit" value="Submit">
-            <input type="Reset" value="Reset">
-        </p>
-    </fieldset>
-    <fieldset>
-        <legend>Button Tag Buttons</legend>
-        <p>
-            <button type="button">button tag</button>
-        </p>
-        <button>
-            <img src="lockksey.jpg" alt="ClickMe">
-        </button>
-    </fieldset>
-</form>
+    <h1>Making Check Boxes</h1>
+    <form action="">
+        <fieldset>
+            <legend>Plese Check off your life Goals</legend>
+            <p>
+                <label for="check">WorldPeace</label>
+                <input type="checkbox" id="chkWP" name="chkWorldPeace" value="WP" />
+            </p>
+            <p>
+                <input type="checkbox" name="chkHarm" id="chkHrmony" value="Harmony">Harmony and BrotherHood
+            </p>
+            <p>
+                <input type="checkbox" id="chkCash" value="cash" />Cash
+            </p>
+        </fieldset>
+    </form>
 
+    <h1>Creating a Radio Button</h1>
+    <form action="">
+        <fieldset>
+            <legend>How Much do you want to spend</legend>
+            <!--The name should be same othewise it will allow multiple selction.-->
+            <p>
+                <input type="radio" name="radi1" id="tm" value="500">Too Much
+            </p>
+            <p>
+                <input type="radio" name="radi1" id="wtm" value="1000" />Way too Much
+            </p>
+            <p> <!--checked = "checked" for default selction-->
+                <input type="radio" name="radi1" id="kid" value="5000" checked="checked" />You've got to be Kidding
+            </p>
+        </fieldset>
+    </form>
 
+    <h1>Buttons Demo</h1>
+    <form action="">
+        <fieldset>
+            <legend>input-style buttons</legend>
+            <p>
+                <input type="button" value="Input type = button">
+                <input type="Submit" value="Submit">
+                <input type="Reset" value="Reset">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Button Tag Buttons</legend>
+            <p>
+                <button type="button">button tag</button>
+            </p>
+            <button>
+                <img src="lockksey.jpg" alt="ClickMe">
+            </button>
+        </fieldset>
+    </form>
 
+    <h1>Sample Practice Form Other style CWH</h1>
+    <form action="bakend.php">
+        <!--The action attribute is use to tell what to do with the form value/Where to submit it in backend-->
+        Name: <input type="text" name="txtName" />
+        Role: <input type="text" name="txtRole">
+        <fieldset>
+
+           <legend>My Form</legend>
+           
+            <div> <!--Div tag is used to create division its a block element whereas input is a inline element-->
+                <label for="txtName1">Name</label>  <!--The for att will have the corresponding name value of input tag the lable is for-->
+                <input type="text" name="txtName1" />
+            </div>
+            <br><!--We will put line break using css and avoid using br tag as much as possible-->
+            <div>
+                Role: <input type="text" name="txtRole">
+            </div>
+            <br>
+            <div>
+                Email: <input type="email" name="useremail">
+                <!--By using name we can get correspondng value using name attribute-->
+            </div>
+            <br>
+            <div>
+                date: <input type="date">
+            </div>
+            <br>
+            <div>
+                bonus: <input type="number">
+            </div>
+            <br>
+            <div>
+                Are You eligible: <input type="checkbox">
+            </div>
+            <br>
+            <div>
+                Male: <input type="radio" name="Gender">
+                Female: <input type="radio" name="Gender">
+                Other: <input type="radio" name="Gender">
+            </div>
+            <br>
+            <div>
+                <p>Something about Yourself:</p> <textarea name="txtArea" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <div>
+                <input type="reset" value="Reset All">
+                <input type="submit" value="Submit Now">
+            </div>
+        </fieldset>
+    </form>
+
+    <!--Id and Classes-->
+    <!--Id is unique for each element no two element should have the same id, with javascript we can grab each element through id
+        and through id name we can use css to style this unique elements
+        Classes are not unique for each element same class name can be defined for multiple elements and also
+        an element can have multiple class names. -->
+    <h1>Id and Classes</h1>
+    <div id = "mainBox" class="redBG"> <!--Suppose i have 100 elements and i want to give background red then doing or repeting css for each element is tedious so we give all elment same class name and by using the class name we cann define css for all the elements with the same class name at once.-->
+        This is main box
+    </div>
+    <span class="redBG"></span> <!--Here we have given same class name redBG to both div and span element-->
+
+    <!-------------------------Emmets----------------------->
+    <!--If i want a span with class name redBG then type span.redBG then enter-->
+    <span class="redBG"></span>
+    <!--If i want a span with id name mainSpan then type span#MainSpan then enter-->
+    <span id="MainSpan"></span>
+    <!--If i want a div with multiple class name redBG,blackBorder,otherClass then type div.redBG.blackBorder.otherClass then enter-->
+    <div class="redBG blackBorder otherClass"></div>
+    <!-- emmet takes div tag as default if i type .redBG it will create div tag with class name redBG -->
+    <div class="redBG"></div>
+
+    <!-------------------------Emmets----------------------->
+
+    <h1>Html Entities</h1>
+    <div class="container">
+        <p>This is a         paragraph</p> <!--The spaces will not get printed coz by default html removes additional space and gives single space-->
+        <!--but i want additionl space then use html entites
+            we can use &nbsp : non breaking space single &nbsp will give only one additional space-->
+
+        <p>This is another &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Paragraph</p>
+        <!--it dosent look professional we will use margin,padding , css selector,properties in Css to do the same-->
+
+        <p>This is another paragraph <p></p> <!--it will not print <p> though i want to print it. Lets use html entities to do so-->
+        <p>This is another paragraph &lt;p&gt;</p>  <!--&lt= less than symbor, &gt = Greater than symbol-->
+        <p>This is pound &pound;</p>
+        <p>This is copyright &copy;</p>
+        <p>This is &frac12;</p>
+
+        <!--We use html entities to write resereved keyword and symbols of HTML-->
+    </div>
+
+    <h1>HTML Sematics Tags</h1>
+    <!--Sematitc means meaning some sematics tags are header,nav,section,article,aside,footer
+        If we use it correctly than it is used for SEO by search engine whrease div,span are nonsementics -->
+    <details>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque obcaecati delectus placeat nesciunt laudantium veritatis! 
+        <summary>
+            Loremsz
+        </summary>
+    </details>
+    <summary>
+        Ram
+        <details >
+            Lord Rama was a great king.
+            His wife name was Sita
+        </details>
+    </summary>
+    
 </body>
+
 </html>
