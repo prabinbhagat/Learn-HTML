@@ -1,0 +1,27 @@
+p{
+    color: darkturquoise;
+    background-color: black;
+}
+/*<!--This is an example of element selector which selects all paragraph elements in markup-->*/
+
+p{
+    color: magenta;
+    background-color: yellow;
+}
+
+/*This is an example of id and class selector which selects all paragraph elements in markup
+  We denote ID with # and class wiht . */
+
+  #firstPara{
+    color: aqua;
+  }
+
+  .bgBlue{
+    background-color: blue;
+  }
+
+  /*This is an example of group selector*/
+
+  span,footer{
+    background-color: navajowhite;
+  }
