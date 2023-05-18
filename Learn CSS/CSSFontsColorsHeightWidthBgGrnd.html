@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Fonts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <style>
+        /*-----------------------------------------FONTS---------------------------------------*/
+        .normal {
+            font-family: cursive;
+        }
+
+        .webSafe {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .webFont {
+            font-family: 'Shadows Into Light', cursive;
+            /*Copied from google fonts*/
+            font-size: 23px;
+            /*This will increse font size to 23 pixels pixel = 1/96th of an Inch */
+            font-weight: bold;
+            /* for bold */
+            font-style: italic;
+        }
+
+        .FontStac {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: antiquewhite;
+            font-size: 30px;
+            line-height: 1.3em;
+            /*Line height is spacing above the font and em multiple of parent font size here 30*1.3em */
+
+        }
+
+        /*-----------------------------------------Colors---------------------------------------*/
+        #firstPara {
+            color: brown;
+            /*This is color by Name*/
+        }
+
+        #secondPara {
+            color: rgb(0, 255, 0);
+            /*This is color by rgb red value,green value, blue value*/
+        }
+
+        #thirdPara {
+            color: #2596be;
+            /* Color by Hex value*/
+        }
+        <!-- /*---------------------------------------Height,Width and Backgrounds---------------------------------------*/ -->
+        #paraA {
+            background-color: red;
+            height: 100px; /* This will increase the height*/
+            width: 500px; /* This will increase the width*/
+
+            /* border-width: 4px;
+            border-style:solid;
+            border-color: green;     We can pass all these three values in a single line see below*/
+            border: 4px solid green;
+
+            border-radius: 11px; /*For Rounded Corner */
+        }
+
+        #paraB {
+            background-color: rgb(29, 90, 220);
+            height: 100px; 
+            width: 500px;
+            /*We can make indipended border and syle each border side independently*/
+            border-top: 2px solid violet;
+            border-start-start-radius: 6px; /*Only top left corner radius here start-start denotes x and y axis*/
+
+            border-left: 3px solid rgb(246, 11, 38);
+            border-right: 3px solid rgb(95, 134, 23);
+            border-bottom: 3px solid rgb(152, 37, 223);
+        }
+
+        #backImg {
+            background-color: antiquewhite;
+            height: 800px;
+            width: 450px;   
+            background-image: url(https://assets.wallpapersin4k.org/uploads/2017/05/Wallpaper-Small-Size-4.jpeg);        
+            background-repeat: no-repeat;
+            border: 2px solid red;
+            background-position: center center; /* denote x and y axis*/
+        }
+    </style>
+</head>
+
+<body>
+    <!-- /*-----------------------------------------FONTS---------------------------------------*/ -->
+    <h1>CSS Fonts</h1>
+    <p class="normal">Lets Check Our Fonts Here we will use inline CSS for this.
+    <p>
+        There are Two types of fonts One is </p>
+    <p class="webSafe">1. Web Safe Fonts : This type of fonts comes preinstalled in almost all the OS. While not all
+        systems have the same fonts installed, you can use a web safe font stack to choose several fonts that look
+        similar, and are installed on the various systems that you want to support.</p>
+    <p class="webFont">2. Web Fonts : This type of fonts needs to be imported</p>
+
+    <p class="FontStac"># Font Stack: This is a concept where we can supply a list of font family so that if first one
+        is not available
+        system will look for second one if it is also not available then next one, in fact we can make a list of all
+        the fonts
+    </p>
+    </p>
+    <!-- /*-----------------------------------------COLORS---------------------------------------*/ -->
+    <h1>Colors</h1>
+
+    <h2>This is my first box</h2>
+    <p id="firstPara">This is a paragraph from first box</p>
+
+    <h2>This is my second box</h2>
+    <p id="secondPara">This is a paragraph from second box</p>
+
+    <h2>This is my third box</h2>
+    <p id="thirdPara">This is a paragraph from third box</p>
+
+    <!-- /*---------------------------------------Height,Width and Backgrounds---------------------------------------*/ -->
+    <h1>This is my Heading</h1>
+    <p id="paraA">This is my first para</p>
+
+    <h1>This is my Heading</h1>
+    <p id="paraB">This is my second para</p>
+
+    <h2>Background image</h2>
+    <p id="backImg"></p>
+
+
+
+
+
+
+</body>
+
+</html>
