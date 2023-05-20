@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid black;
+            margin: auto;
+            /* it will allign to center*/
+            background-color: rgb(11, 175, 175);
+
+        }
+
+        .item {
+            border: 3px solid green;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(170, 187, 236);
+        }
+
+        #fruits {
+            float: left;
+            /*since we are floating element its no longer in parent containter*/
+            width: 49%;
+        }
+
+        #Computer {
+            float: left;
+            width: 49%;
+        }
+
+        #items {
+            /* float: left; */
+            clear: both;
+            width: 99%;
+        }
+
+        p,
+        h1 {
+            text-align: right;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my Store</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitsPara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias nihil
+                nesciunt modi nemo quas pariatur ratione at fugiat aliquid iusto!</p>
+        </div>
+
+        <div id="Computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerPara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias nihil
+                nesciunt modi nemo quas pariatur ratione at fugiat aliquid iusto!</p>
+        </div>
+
+        <div id="items" class="item">
+            <h3>Items</h3>
+            <p id="itemsPara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias nihil
+                nesciunt modi nemo quas pariatur ratione at fugiat aliquid iusto!</p>
+        </div>
+
+        <div id="items" class="item">
+            <h3>Items</h3>
+            <p id="itemsPara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias nihil
+                nesciunt modi nemo quas pariatur ratione at fugiat aliquid iusto!</p>
+        </div>
+    </div>
+</body>
+
+</html>
