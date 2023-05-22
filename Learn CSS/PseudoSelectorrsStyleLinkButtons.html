@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors Style link and Buttons</title>
+    <style>
+        .container{
+            border: 3px solid green;
+            background-color: aquamarine;
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+        .btn{
+            background-color: rgb(210, 238, 169);
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px ;
+            border-radius: 20px;
+        }
+        a{
+            text-decoration: none;/* This will remove the hyper link underline*/
+        }
+        a:hover{            /*This is a psedo selectoer*/
+            color: red;
+            background-color: yellowgreen;
+        }
+
+        a:visited{              /*This is also a pseudo selector*/
+            background-color: rgb(167, 167, 209);       
+         }
+        a:active{
+            background-color: yellow;
+        }
+        .btn:hover{
+            border: 3px solid salmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam sit quasi nemo tempora corrupti, pariatur impedit harum, officiis culpa necessitatibus eos, officia similique dignissimos. Dignissimos quis rerum doloremque magni ipsum maxime exercitationem odio beatae.</p>
+        <a href="www.facebook.com" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+    </div>
+    
+</body>
+</html>
