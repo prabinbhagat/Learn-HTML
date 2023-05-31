@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | String and its Methods</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam omnis, minima incidunt, a totam, aut inventore necessitatibus eligendi perferendis corrupti quae veritatis culpa nam? Ducimus ratione nobis laudantium quasi nulla laborum doloribus! Quos, odio?</p>
+
+    </div>
+    <script>
+        //Javascirpt here
+        var stringName = "Prabin";
+        var strinLname = "Bhagat's";
+        var fulName = 'Prabin Bhagat "Says hi"';
+
+        var conCat = stringName + strinLname
+        console.log(conCat)
+         // if you want to use extra single quote in a string then use "" for string creating  and if you want to use double quote inside a string then use ' ' for string creation.
+
+        console.log(stringName);
+        console.log(strinLname);
+        console.log(fulName);
+
+        //string interpolation using ``
+
+        var temp = `${stringName} wants to learn javascript and this is a string interpolaiting where ${fulName}`;
+        console.log(temp);
+
+        // Getting length of stiring
+        var len = stringName.length
+        console.log(`length of name is ${len}`);
+
+        //escape sequence character
+
+        console.log("Hello World \nPrabin") // '\n' for new line
+        console.log("Hello World \tPrabin") // '\t' for tab line
+        console.log("Hello \\nWorld \tPrabin") // '\\' for printing '\'
+
+        //Creating string useing string constructor 'String'
+        var ythisString = new String("Love"); 
+        console.log(ythisString)
+
+        document.getElementById('content').innerHTML = "<h1>Ha ha i have been inserted dynmamically using js</h1>"
+
+    </script>
+</body>
+</html>
