@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript | String and its Methods</title>
 </head>
+
 <body>
     <div class="container">
         <h1>Lorem ipsum dolor sit</h1>
         <div id="content"></div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam omnis, minima incidunt, a totam, aut inventore necessitatibus eligendi perferendis corrupti quae veritatis culpa nam? Ducimus ratione nobis laudantium quasi nulla laborum doloribus! Quos, odio?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam omnis, minima incidunt, a totam, aut
+            inventore necessitatibus eligendi perferendis corrupti quae veritatis culpa nam? Ducimus ratione nobis
+            laudantium quasi nulla laborum doloribus! Quos, odio?</p>
 
     </div>
     <script>
@@ -21,7 +25,7 @@
 
         var conCat = stringName + strinLname
         console.log(conCat)
-         // if you want to use extra single quote in a string then use "" for string creating  and if you want to use double quote inside a string then use ' ' for string creation.
+        // if you want to use extra single quote in a string then use "" for string creating  and if you want to use double quote inside a string then use ' ' for string creation.
 
         console.log(stringName);
         console.log(strinLname);
@@ -43,11 +47,46 @@
         console.log("Hello \\nWorld \tPrabin") // '\\' for printing '\'
 
         //Creating string useing string constructor 'String'
-        var ythisString = new String("Love"); 
+        var ythisString = new String("Love");
         console.log(ythisString)
 
         document.getElementById('content').innerHTML = "<h1>Ha ha i have been inserted dynmamically using js</h1>"
 
+        //---Strings Functions---------
+
+        var str = "This is a string";
+        console.log(str);
+
+        var position = str.indexOf("is"); //This gives first occurance in our case Th is
+        console.log(position);
+
+        position = str.lastIndexOf("is");
+        console.log(position);
+
+        //Substring from a string
+        var strs = str.slice(1, 6) // it will print one less that is form 1 to 5
+        console.log(strs)
+
+        var strs = str.substring(1, 7);
+        console.log(strs)
+
+        var replaced = str.replace("string", "prabin");
+        console.log(replaced)
+
+        console.log(replaced.toUpperCase())
+        console.log(replaced.toLowerCase())
+
+        var strin = str.concat(" Add me")
+        console.log(strin)
+
+        var name = "  Prabin   "
+        console.log(name)
+        console.log(name.trim())
+
+        //Returnign char from string
+
+
     </script>
 </body>
+
 </html>
