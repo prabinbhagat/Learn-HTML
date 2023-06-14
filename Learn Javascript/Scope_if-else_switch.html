@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditional</title>
+</head>
+
+<body>
+    <!-- div>ul>li{item-$}*7 generates below code -->
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        var string = "This is a string";
+        console.log(string);
+        var string2 = "This a string two";
+        console.log(string2);
+
+        let a = "u";//block level scope let has
+        {
+            let a = "u6";
+            console.log(a);
+        }
+        console.log(a);
+
+        const c = "This cannot be changed"; // It cannot be changed
+        //c = "I am changing it"; //this will give error
+
+        // Conditionals can be used for form validation for user input
+
+        let age = 34;
+        if (age > 18) {
+            console.log("You can drink");
+        }
+        else if (age == 2) {
+            console.log("You can drink milk");
+        }
+        else {
+            console.log("You can drink cold drink");
+        }
+
+        // Switch case statement
+
+        const cups = 34
+
+        switch (cups) {
+            case 4:
+                console.log("the value is 4")
+                break;
+            case 5:
+                console.log("the value is 5")
+                break;
+            case 34:
+                console.log("the value is 34")
+                break;
+            default:
+                console.log("the value is not defined")
+                break;
+        }
+
+        
+
+
+
+
+    </script>
+</body>
+
+</html>
