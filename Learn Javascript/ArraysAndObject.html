@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArraysAndObject</title>
+</head>
+<body>
+    <div class="container">Simple HTML</div>
+</body>
+<script>
+    //primitive--
+    let myvar = 34;
+    let string = "mystring";
+    let mybool = true;
+    let myvar1 = null;
+    let myvar2= undefined;
+    //primitive--
+    //Two type of datatype primitive and Reference
+    //either objects or primitive(string,boolean,null,undefined)
+
+    //--Object stores key value pairs
+    let emp = {name:"Prabin",Age:20,Salary:20,Occupation:null}
+    console.log(emp);
+
+    //below two method to access object element keys correspoindg values
+    console.log(emp.name)
+    console.log(emp['name'])
+    //--------------------------
+    
+    //Array create using []
+    let names = [1,2,3,"Prabin"];
+    console.log(names);
+    //accessing array element
+    console.log(names[3]);
+
+    // we can create object using new keyword
+    let names2 = new Array(7,9,6,null,"Ram",undefined)
+    console.log(names2);
+    console.log(names2.length); //length of array
+    names2 = names2.sort();
+    console.log(names2);
+
+    //Adding element in array at end
+    names2.push("I am Pushed")
+    console.log(names2)
+    //create an object with 23 elements
+    let myarr = new Array(23)
+    console.log(myarr);
+
+    
+
+</script>
+</html>
