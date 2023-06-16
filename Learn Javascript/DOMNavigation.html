@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+
+<body>
+    <div id="Main" class="container">
+        <!-- This is main -->
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+            <li>More About us</li>
+        </ul>
+    </div>
+    <div class="container">
+        another container
+    </div>
+</body>
+<script>
+    let main = document.getElementById('Main');
+    console.log(main);
+
+    let nav = document.getElementById('nav');
+    console.log(nav);
+
+    let container = document.getElementsByClassName("container")
+    console.log(container)
+    //container[0] to get first container
+
+    // using query selector or css selector
+    let sel = document.querySelector('.container') //This will return the first matching elment with class name container
+    console.log(sel);
+
+    // we can use all the css selector
+    let sel1 = document.querySelector('#nav')//this will return the element with id nav
+    console.log(sel1);
+
+    let sel3 = document.querySelector('#nav>li');//this will return first li but what if i want to get all li then we will use queryselectorall
+    console.log(sel3);
+
+    let allLi = document.querySelectorAll('#nav>li')
+    console.log(allLi);
+
+    //get first element of the above list nods
+    let firstLi = allLi[0].innerHTML
+    console.log(firstLi);
+
+    allLi[0].innerHTML = "inserted"
+    console.log(allLi[0].innerHTML)
+    
+</script>
+</html>
