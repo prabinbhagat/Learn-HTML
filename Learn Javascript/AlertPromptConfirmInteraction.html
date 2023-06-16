@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction with AlertPromptConfirm</title>
+</head>
+<body>
+    <div class="container">This is a container</div>
+</body>
+<script>
+//Alert in in-browser javascript dosent return anything
+alert("This is a alert message"); //This is a modal window
+
+//Prompt
+let name = prompt("What is your name?","Guest") //Just like an input box
+console.log(name);
+
+//Confirm: When you want to confirm anyting like delete
+let deletePost = confirm("Do you really wannna delete?")
+console.log(deletePost); // returns boolean value
+
+if(deletePost){
+    console.log("Post has been deleted")
+}else{
+    console.log("Post deletion cancelled")
+}
+
+
+</script>
+
+</html>
