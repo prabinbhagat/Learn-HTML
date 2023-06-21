@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    <div class="container">
+        This is arrow Function tutorial
+    </div>
+    <script>
+        function Greet(){
+            console.log("Good Morning");
+        }
+        Greet();
+
+        //Lets write above code in shorhand or arrow function
+        Greets = () => {
+            console.log("Good Morning Arrow function")
+        }
+        Greets();
+
+        setTimeout(() => {
+            Greet()
+        }, 3000);
+
+        //Lets see anothger example
+        let sum = (a,b) => {
+            return a+b;
+        }
+        console.log(sum(5,50));
+
+        //The above can be more shorhand to
+        let minus = (a,b) => a-b;
+        console.log(minus(50,5));
+
+        //Furhter shorthand--/We cannot write two argument lke belwo
+        let half = a => a/2;
+        console.log(half(45));
+
+        let greeting = () => console.log("Hellow arrow");
+        greeting();
+
+        //Lexical This
+
+        let Obj1 = {
+            greetz:"Good morning this ",
+            names:["Ram","Shyam","Ghanshyam","Santa"],
+            speak(){
+                this.names.forEach((student)=>{
+                    console.log(this.greetz +"Hellow " + student );
+                })
+            }
+        }
+        Obj1.speak();
+
+        // in above if we are inside an arrow function this will point to outer object and get the greeting in our case
+        // but if we use a function instead of arrow function it will only search this. inside its block only.
+        // 
+    
+    </script>
+</body>
+</html>
