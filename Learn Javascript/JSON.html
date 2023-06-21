@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+<body>
+    <div class="container">
+        JSON:Javascript Object Notation used to store and transfer data.Data transportation through network if we have obj javascript we can
+        convert it to string and transfer it.
+
+        <script>
+            let obj = {
+                name:"Prabin",
+                Channel:"MyChannel",
+                friend:"Ram",
+                Food:"Pasta"
+            }
+            console.log(obj);
+
+            //now i want to transport it through we will have complex objects like objects inside a object nested objects and 
+            //various functions many more things in it. So, for this we stringify it i.e convert to string
+
+            let myJsonStr = JSON.stringify(obj);
+            console.log(myJsonStr); // Here the obj is converted to string and we can use all the string methods in it.
+
+            console.log(myJsonStr.replace("Pasta","Chowmein"));
+
+            // now lets Convert it back to object
+            let newJsonobj = JSON.parse(myJsonStr);
+            console.log(newJsonobj);
+
+            //we can parse json in any programming language.
+            
+        </script>
+    </div>
+</body>
+</html>
